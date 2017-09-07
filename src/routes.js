@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import App from './containers/App';
+import Home from './containers/Home';
 
-const Home = () => <div>Home2</div>;
-const About = () => <div>About</div>;
+const About = () => <div>nwbrowser について</div>;
 
 export default () => (
   <App>

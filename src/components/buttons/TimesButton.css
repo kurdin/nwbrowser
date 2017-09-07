@@ -1,0 +1,39 @@
+.TimesButton {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #ff605a;
+  border: 1px solid #f34743;
+  border-radius: 6px; }
+  .TimesButton:active {
+    background-color: #d04843;
+    border-color: #bb3937; }
+
+.TimesButton__top,
+.TimesButton__bottom {
+  display: none;
+  position: absolute;
+  background-color: #8d0407;
+  transform: rotate(45deg); }
+  .TimesButton--hover .TimesButton__top,
+  .TimesButton:hover .TimesButton__top, .TimesButton--hover
+  .TimesButton__bottom,
+  .TimesButton:hover
+  .TimesButton__bottom {
+    display: block; }
+  .TimesButton:active .TimesButton__top, .TimesButton:active
+  .TimesButton__bottom {
+    background-color: #550202; }
+
+.TimesButton__top {
+  width: 8px;
+  height: 2px;
+  top: 4px;
+  left: 1px; }
+
+.TimesButton__bottom {
+  width: 2px;
+  height: 8px;
+  top: 1px;
+  left: 4px; }

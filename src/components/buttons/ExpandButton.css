@@ -1,0 +1,41 @@
+.ExpandButton {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #12ab3e;
+  background-color: #00cb4f;
+  border-radius: 6px; }
+  .ExpandButton:active {
+    background-color: #00983a;
+    border-color: #128331; }
+
+.ExpandButton__top,
+.ExpandButton__bottom {
+  display: none;
+  position: absolute; }
+  .ExpandButton--hover .ExpandButton__top,
+  .ExpandButton:hover .ExpandButton__top, .ExpandButton--hover
+  .ExpandButton__bottom,
+  .ExpandButton:hover
+  .ExpandButton__bottom {
+    display: block; }
+
+.ExpandButton__top {
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 2px;
+  background-color: #006314; }
+  .ExpandButton:active .ExpandButton__top {
+    background-color: #003106; }
+
+.ExpandButton__bottom {
+  width: 8px;
+  height: 2px;
+  top: 4px;
+  left: 1px;
+  background-color: #00cb4f;
+  transform: rotate(45deg); }
+  .ExpandButton:active .ExpandButton__bottom {
+    background-color: #00983a; }

@@ -1,5 +1,64 @@
-webview {
+body {
+  font-size: 12px;
+  background: transparent;
+}
+
+.Window {
+}
+
+.WindowPane {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-right: 4px solid #000;
+}
+
+.WindowPane__header {
+  height: 22px;
+  line-height: 24px;
+  border-top: 1px solid #f6f6f6;
+  background: linear-gradient(#ebebeb, #d4d4d4);
+}
+.WindowPane__header ul {
+  margin-top: 5px;
+  display: inline-block;
+  margin-bottom: 0;
+  float: left;
+  list-style: none;
+  padding: 0;
+}
+.WindowPane__header ul li {
+  float: left;
+}
+.WindowPane__header ul li > a {
   display: block;
-  width: 640px;
-  height: 300px;
+}
+
+input {
+  height: 20px;
+}
+
+
+.WindowPane__middle {
+  height: 100%;
+  display: flex;
+}
+
+.WindowPane .Tabs {
+  width: 180px;
+  background: #f2f2f2;
+  border-top: 1px solid #b6b4b6;
+}
+
+.WindowPane__content {
+  width: 100%;
+  position: relative;
+  border-left: 1px solid #b6b4b6;
+}
+
+.WindowPane__content .webView {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

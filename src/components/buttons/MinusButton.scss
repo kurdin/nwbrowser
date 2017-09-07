@@ -1,0 +1,33 @@
+.MinusButton {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #ffbf46;
+  border: 1px solid #eb9f38;
+  border-radius: 6px;
+
+  &:active {
+    background-color: #cb8f34;
+    border-color: #b57b2f;
+  }
+}
+
+.MinusButton__top {
+  display: none;
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  background-color: #a45717;
+
+  .MinusButton--hover &,
+  .MinusButton:hover & {
+    display: block;
+  }
+
+  .MinusButton:active & {
+    background-color: #612807;
+  }
+}
